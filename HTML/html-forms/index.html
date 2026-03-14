@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="UserName" id="name" placeholder="Enter your name" required>
+
+            <br><br>
+
+            <label for="fname">Father Name:</label>
+            <input type="text" name="userFname" id="fname"placeholder="Enter father name=">
+
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="userAge" id="age" min="1" max="100">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="userEmail" id="email" placeholder="example@gmail.com" required>
+
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="others" value="others">
+            <label for="others">Others</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Programming Languages</legend>
+
+            <input type="checkbox" id="sql" name="Subject" value="Sql">
+            <label for="sql">Sql</label>
+
+            <input type="checkbox" name="Subject" id="java" value="Java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" name="Subject" id="python" value="Python">
+            <label for="python">Python</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Country</legend>
+
+            <label for="country">Select Country:</label>
+            <select name="country" id="country">
+                <option value="">--Select--</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="england">England</option>
+                <option value="uk">UK</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <label for="skill">Choose a skill:</label>
+            <input list="skills" id="skill" name="skill">
+            <datalist id="skills">
+                <option value="html"></option>
+                <option value="css"></option>
+                <option value="javascript"></option>
+                <option value="react"></option>
+            </datalist>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            
+            <label for="message">About Yourself:</label>
+            <textarea name="message" id="message" rows="4" cols="40" placeholder="Write something...."></textarea>
+
+            <br><br>
+
+            <label for="file">Upload Resume:</label>
+            <input type="file" name="resume" id="file">
+
+            <br><br>
+
+            <label for="color">Favorite Color</label>
+            <input type="color" name="favcolor" id="color">
+
+            <br><br>
+
+            <label for="range">Experoence Level:</label>
+            <input type="range" id="range" min="0" max="10">
+        </fieldset>
+
+        <br><br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
